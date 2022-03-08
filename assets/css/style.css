@@ -54,14 +54,14 @@ header nav ul {
   header nav ul li a {
     padding: 10px 17px;
     font-weight: lighter;
-    font-size: 1.55vw;
+    font-size: 1.35vw;
     color: var(--white);
     margin: 12px 2px;
     text-shadow: 0 0 15px rgb(0 0 0 / 50%);
     text-decoration: none;
 }
 
-/*hero image styling*/
+/*hero styling*/
 .hero {
     background-image: url("../images/hero-image.jpg");
     background-size: cover;
@@ -73,6 +73,7 @@ header nav ul {
     background-attachment: fixed;
     background-position: 100%;
     align-items: baseline;
+
 }
 
 .hero h2 {
