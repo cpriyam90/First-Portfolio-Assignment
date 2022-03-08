@@ -1,5 +1,5 @@
 * {
-    margin: 0;
+    margin: 0px;
     padding: 0;
     box-sizing: border-box;
 }
@@ -7,6 +7,7 @@
 :root {
     --teal: #39a6b2;
     --white: #fff;
+    --blue: #024e76;
 
 }
 
@@ -17,24 +18,73 @@ body {
 
 /*header style*/
 header {
-    padding: 20px 35px;
-    background-color: teal;
+    padding: 12px 35px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    background-position: 80%;
+    /* background-position: 80%; */
     position: -webkit-sticky;
     position: sticky;
     top: 0;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    background-color: var(--blue);
 }
 
 header h1 {
     font-weight: bold;
-    font-size: 36px;
+    font-size: 37px;
     color: var(--white);
-    margin: 0;
-   
+    margin: 2px;
+    text-shadow: 0 0 15px rgb(0 0 0 / 50%);
+}
+
+header nav {
+    margin: 7px 0;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;  
+}
+  header nav ul li a {
+    padding: 10px 17px;
+    font-weight: lighter;
+    font-size: 1.55vw;
+    color: var(--white);
+    margin: 12px 2px;
+    text-shadow: 0 0 15px rgb(0 0 0 / 50%);
+    text-decoration: none;
+}
+
+/*hero image styling*/
+.hero {
+    background-image: url("../images/hero-image.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    background-attachment: fixed;
+    background-position: 100%;
+    align-items: baseline;
+}
+
+.hero h2 {
+    color: var(--white);
+    display:flex;
+    align-items: stretch;
+    text-shadow: 0 0 15px rgba(0, 0, 0, 0.75);
+    /* text-align: left; */
+}
+
+.avatar{
+    border-radius: 50%;
+    max-height: 400px;
+    opacity: 0.75;
 }
