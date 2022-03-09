@@ -18,6 +18,7 @@ body {
 
 /*header style*/
 header {
+    z-index: 9999;
     padding: 12px 35px;
     display: flex;
     justify-content: space-between;
@@ -51,7 +52,8 @@ header nav ul {
     align-items: center;
     list-style: none;  
 }
-  header nav ul li a {
+
+header nav ul li a {
     padding: 10px 17px;
     font-weight: lighter;
     font-size: 1.35vw;
@@ -59,6 +61,10 @@ header nav ul {
     margin: 12px 2px;
     text-shadow: 0 0 15px rgb(0 0 0 / 50%);
     text-decoration: none;
+}
+
+header a:hover {
+    background-color: var(--teal);
 }
 
 /*header styling end*/
@@ -149,5 +155,35 @@ header nav ul {
 
 .column img {
     max-width: 100%;
+}
+
+.contact-me {
+    background-color: var(--white);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.contact-title {
+    font-size: 56px;
+    flex: 0.5;
+    border-right: 2px solid var(--teal);
+    text-align: right;
+    margin: 30px 30px 30px 0;
+}
+
+.contact-methods {
+    flex: 2;
+    margin: 70px 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.contact {
+    font-size: 24px;
+    margin: 20px;
+    border: 2px solid var(--blue);
 }
 
