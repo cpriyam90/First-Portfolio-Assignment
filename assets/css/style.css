@@ -23,7 +23,7 @@ header {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    /* background-position: 80%; */
+    background-position: 80%;
     position: -webkit-sticky;
     position: sticky;
     top: 0;
@@ -87,7 +87,7 @@ header a:hover {
 .hero h2 {
     color: var(--white);
     text-shadow: 0 0 15px rgba(0, 0, 0, 0.75);
-    /* text-align: left; */
+
 }
 
 .avatar{
@@ -99,6 +99,7 @@ header a:hover {
 /*hero styling end*/
 
 /*content styling*/
+
 .about-me {
     background-color: var(--white);
     display: flex;
@@ -119,7 +120,6 @@ header a:hover {
     flex: 2;
     font-size: 16px;
     text-align: left;
-    /* margin: 30px 50px 30px 30px; */
     margin: 50px;
 }
 
@@ -157,6 +157,26 @@ header a:hover {
     max-width: 100%;
 }
 
+.run-buddy {
+    position: relative;
+}
+
+.text-title {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    background-color: black;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 30px;
+    opacity: 0.5;
+}
+
+/*content styling end*/
+
+/*footer/contect me styling */
+
 .contact-me {
     background-color: var(--white);
     display: flex;
@@ -187,3 +207,95 @@ header a:hover {
     border: 2px solid var(--blue);
 }
 
+/* footer/content me styling end */
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+    header {
+      padding-bottom: 0;
+      justify-content: center;
+      position: relative;
+    }
+  
+    header h1 {
+      width: 100%;
+      text-align: center;
+    }
+  
+    header nav ul {
+      margin-top: 20px;
+      width: 100%;
+      justify-content: center;
+    }
+  
+    header nav ul li a {
+      font-size: 17px;
+    }
+  
+    .about-title, .work-title, .contact-title {
+      width: 80%;
+    }
+    
+    .image-container {
+      flex: 0 70%;
+    }
+    
+    }
+  
+  /* MEDIA QUERY FOR TABLETS AND SMALLER */
+  @media screen and (max-width: 768px) {
+    section {
+      padding: 30px 15px;
+    }
+    .step h3 {
+      flex: 1 100%;
+      text-align: center;
+    }
+  
+    .step-info {
+      flex: 2 100%;
+      text-align: center;
+      justify-content: center;
+    }
+  
+    .step-img {
+      flex: 0 32%;
+      margin-right: 0;
+      margin-top: 15px;
+      margin-bottom: 15px;
+    }
+  
+    .step-text {
+      flex: 100%;  
+    }
+  }
+  
+  /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+  @media screen and (max-width: 575px) {
+    .about-title {
+      width: 95%;
+    }
+
+    .work-title {
+        width: 95%;
+    }
+
+    .contact-title {
+        width: 95%;
+    }
+
+      .trainer {
+      flex: 0 100%;
+    }
+  
+    .contact-info {
+      text-align: center;
+    }
+  
+    .contact-info > * {
+      flex: 0 100%;
+    }
+    .contact-form {
+      order: 3;
+    }
+  }
