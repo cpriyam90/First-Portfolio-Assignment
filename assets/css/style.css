@@ -144,6 +144,7 @@ header a:hover {
     margin:0px 50px;
     display:flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .row {
@@ -159,6 +160,11 @@ header a:hover {
 
 .column img {
     max-width: 100%;
+
+}
+
+.column img:hover {
+  opacity: 0.5;
 }
 
 .run-buddy {
@@ -252,58 +258,72 @@ header a:hover {
   
   /* MEDIA QUERY FOR TABLETS AND SMALLER */
   @media screen and (max-width: 768px) {
-    section {
-      padding: 30px 15px;
+    header {
+      padding-bottom: 0;
+      justify-content: center;
+      position: relative;
     }
-    .step h3 {
-      flex: 1 100%;
+  
+    header h1 {
+      width: 100%;
       text-align: center;
     }
   
-    .step-info {
-      flex: 2 100%;
-      text-align: center;
+    header nav ul {
+      margin-top: 20px;
+      width: 100%;
       justify-content: center;
     }
   
-    .step-img {
-      flex: 0 32%;
-      margin-right: 0;
-      margin-top: 15px;
-      margin-bottom: 15px;
+    header nav ul li a {
+      font-size: 17px;
     }
   
-    .step-text {
-      flex: 100%;  
+    .about-title, .work-title, .contact-title {
+      width: 60%;
+    }
+    
+    .image-container {
+      flex: 0 50%;
     }
   }
   
   /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
   @media screen and (max-width: 575px) {
-    .about-title {
-      width: 95%;
-    }
-
-    .work-title {
-        width: 95%;
-    }
-
-    .contact-title {
-        width: 95%;
-    }
-
-      .trainer {
-      flex: 0 100%;
+    .header {
+      padding-bottom: 0;
+      justify-content: center;
+      position: relative;
     }
   
-    .contact-info {
+    header h1 {
+      width: 100%;
       text-align: center;
     }
   
-    .contact-info > * {
-      flex: 0 100%;
+    header nav ul {
+      margin-top: 20px;
+      width: 100%;
+      justify-content: center;
     }
-    .contact-form {
-      order: 3;
+  
+    header nav ul li a {
+      font-size: 17px;
     }
+  
+    .about-title, .work-title, .contact-title {
+      width: 50%;
+    }
+    
+    .image-container {
+      flex: 0 40%;
+    }
+
+    .contact-me {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+
   }
