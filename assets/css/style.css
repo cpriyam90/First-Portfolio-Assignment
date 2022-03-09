@@ -61,6 +61,8 @@ header nav ul {
     text-decoration: none;
 }
 
+/*header styling end*/
+
 /*hero styling*/
 .hero {
     background-image: url("../images/hero-image.jpg");
@@ -89,3 +91,32 @@ header nav ul {
     max-height: 400px;
     opacity: 0.75;
 }
+
+/*hero styling end*/
+
+/*content styling*/
+.about-me {
+    background-color: var(--white);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+ 
+.section-title {
+    font-size: 48px;
+    flex: 1;
+    border-right: 2px solid var(--teal);
+    text-align: right;
+    margin-right: 20px;
+    max-width: 200px;
+    /* margin-left: -420px; */
+}
+
+.about-me p {
+    flex: 1;
+    font-size: 30px;
+    text-align: center;
+    max-width: 50%;
+}
+
