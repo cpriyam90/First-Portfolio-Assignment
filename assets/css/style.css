@@ -122,7 +122,11 @@ header a:hover {
     text-align: left;
     margin: 50px;
 }
+.box1 {
+  display: flex;
 
+
+}
 .work {
     background-color: var(--white);
     display: flex;
@@ -131,17 +135,21 @@ header a:hover {
     width: 100%;  
 }
 
+.work-title-container {
+  border-right: 2px solid var(--teal);
+}
+
 .work-title {
     font-size: 56px;
     flex: 0.5;
-    border-right: 2px solid var(--teal);
-    text-align: right;
-    margin: 30px 30px 30px 0;
+    /* text-align: right; */
+    margin-left: 8.6rem;
 }
 
 .image-container {
     flex:2;
-    margin:0px 50px;
+    /* margin:0px 50px; */
+    width: 80%;
     display:flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -150,16 +158,19 @@ header a:hover {
 .row {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .column {
     flex: 30%;
-    padding: 15px;
+    padding: 5px;
     position: relative;
+    margin: 10px;
 }
 
 .column img {
   max-height: 100%;
+  border: 2px solid black;
 }
 
 .column img:hover {
@@ -168,6 +179,13 @@ header a:hover {
 
 .run-buddy {
     position: relative;
+    /* width: 90%; */
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.run-buddy img {
+  border: 2px solid black;
 }
 
 .run-buddy img:hover {
@@ -187,15 +205,16 @@ header a:hover {
 }
 
 .column-title {
-  position: absolute;
+    position: absolute;
     bottom: 20px;
-    left: 0;
+    left: 7px;
     background-color: black;
     color: white;
     padding-left: 20px;
     padding-right: 20px;
     font-size: 20px;
     opacity: 0.5;
+    margin: auto;
 
 }
 
@@ -230,12 +249,12 @@ header a:hover {
 .contact {
     font-size: 24px;
     margin: 20px;
-    border: 2px solid var(--blue);
+    border-bottom: 2px solid var(--blue);
 }
 
 /* footer/content me styling end */
 
-/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER
 @media screen and (max-width: 980px) {
     header {
       padding-bottom: 0;
@@ -268,7 +287,7 @@ header a:hover {
     
     }
   
-  /* MEDIA QUERY FOR TABLETS AND SMALLER */
+  MEDIA QUERY FOR TABLETS AND SMALLER
   @media screen and (max-width: 768px) {
     header {
       padding-bottom: 0;
@@ -300,7 +319,7 @@ header a:hover {
     }
   }
   
-  /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+  MEDIA QUERY FOR MOBILE PHONES AND SMALLER
   @media screen and (max-width: 575px) {
     .header {
       padding-bottom: 0;
@@ -336,6 +355,3 @@ header a:hover {
       flex-wrap: wrap;
       align-items: center;
     }
-
-
-  }
