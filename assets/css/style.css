@@ -142,15 +142,19 @@ header a:hover {
 .image-container {
     flex:2;
     margin:0px 50px;
+    display:flex;
+    flex-wrap: wrap;
 }
 
 .row {
     display: flex;
+    justify-content: space-between;
 }
 
 .column {
-    flex: 33.33%;
+    flex: 30%;
     padding: 15px;
+
 }
 
 .column img {
