@@ -80,8 +80,6 @@ header nav ul {
 
 .hero h2 {
     color: var(--white);
-    display:flex;
-    align-items: stretch;
     text-shadow: 0 0 15px rgba(0, 0, 0, 0.75);
     /* text-align: left; */
 }
@@ -103,7 +101,7 @@ header nav ul {
     width: 100%;
 }
  
-.section-title {
+.about-title {
     font-size: 56px;
     flex: 0.5;
     border-right: 2px solid var(--teal);
@@ -117,5 +115,39 @@ header nav ul {
     text-align: left;
     /* margin: 30px 50px 30px 30px; */
     margin: 50px;
+}
+
+.work {
+    background-color: var(--white);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;  
+}
+
+.work-title {
+    font-size: 56px;
+    flex: 0.5;
+    border-right: 2px solid var(--teal);
+    text-align: right;
+    margin: 30px 30px 30px 0;
+}
+
+.image-container {
+    flex:2;
+    margin:0px 50px;
+}
+
+.row {
+    display: flex;
+}
+  
+.column {
+    flex: 33.33%;
+    padding: 5px;
+}
+
+.column img {
+    max-width: 100%;
 }
 
