@@ -10,7 +10,7 @@ HTML, CSS, Advanced CSS, Responsive CSS
 
 ## Usage
 
-This portfolio was made to not only showcase my work to an emploer but to meet the criteria listed below. It also highlights the use of CSS Variables, Flex box and Media Queries to develop a responsive webpage
+This portfolio was made to not only showcase my work to an employer but to meet the criteria listed below. It also highlights the use of CSS Variables, Flex box and Media Queries to develop a responsive webpage
 
 ## User Story
 
@@ -41,7 +41,7 @@ This portfolio was made to not only showcase my work to an emploer but to meet t
 
 ## Credits
 
-W3 schools tutorials for Flexbox and Run-Buddy Module is bootcamp class material
+W3 schools tutorials for Flexbox and Run-Buddy Module bootcamp class material
 
 ## Link to depolyed page
 

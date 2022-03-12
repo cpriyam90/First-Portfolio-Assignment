@@ -475,10 +475,11 @@ header a:hover {
 
     .contact-methods {
       flex:0 50%;
+      justify-content: flex-start;
     }
 
     .contact {
-      font-size: 5px;
+      font-size: 8px;
     }
 
     .footer-title h2 {
